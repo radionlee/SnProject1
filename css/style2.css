@@ -1,0 +1,336 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* roboto-regular - cyrillic */
+@font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   src: local(''),
+        url('../fonts/roboto-v29-cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v29-cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* roboto-500 - cyrillic */
+ @font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 500;
+   src: local(''),
+        url('../fonts/roboto-v29-cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v29-cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+ /* roboto-700 - cyrillic */
+ @font-face {
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 700;
+   src: local(''),
+        url('../fonts/roboto-v29-cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/roboto-v29-cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+ }
+
+body{
+   padding: 0;
+   margin: 0;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   }
+
+   h1, h2, h3, h4, h5, h6{
+      padding: 0;
+      margin: 0;
+   }
+
+   ul, li{
+      display: block;
+      padding: 0;
+      margin: 0;
+   }
+
+   html{
+      background-color: #E5E5E5;;
+   }
+  
+   .header{
+      top:0;
+      left: 0;
+      width: 100%;
+      background: url('../img/header-img.jpg')  center no-repeat;
+      
+   }
+   
+
+
+ .wrapper{
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+.header__wrapper{
+   
+   padding-top: 28.88px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items:center;
+   justify-content: space-around;
+   padding-bottom: 147.88px;
+}
+
+.header__list{
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.header__item{
+   margin-right: 50px;
+}
+
+.header__link{
+   color:white;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 142%;
+   text-decoration: none;
+}
+
+.header__link:hover, .header__link:focus, .header__link:active{
+   opacity: .75;
+}
+
+
+/* Start about */
+.about{
+   max-width: 1170px;
+   margin:0 auto;
+   justify-content: space-between;
+
+
+}
+
+.about__title{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 96px;
+   line-height: 109%;
+   color:white;
+   text-align: center;
+   letter-spacing: 0.02em;
+   justify-content: space-between;
+   padding-bottom: 50px;
+   
+   
+   
+}
+
+.about__subtitle{
+   max-width: 562px;
+   margin: 0 auto;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 142%;
+   text-align: center;
+   color: white;
+   padding-bottom: 50px;
+}
+
+.btnfindtour{
+   max-width: 118px;
+   max-height: 34px;
+   margin: 0 auto;
+   padding-bottom: 119px;
+   
+}
+
+/* Start find tour */
+
+
+.chose{
+   padding-top: 135px;
+   max-width: 1170px;
+   margin: 0 auto;
+}
+
+.chose__wrap{
+text-align: center;
+}
+
+.chose__tour-items{
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: center;
+   padding-bottom: 106px;
+}
+
+
+
+.chose__title{
+  
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 59px;
+   line-height: 124%;
+   text-align: center;
+   padding-bottom: 35px;
+
+}
+
+.chose__tour-link{
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 23px;
+   line-height: 122%;
+   text-decoration: none;
+   color: black;
+   margin-right: 30px;
+}
+
+
+.chose__tour-link:hover, .chose__tour-link:focus, .chose__tour-link:active{
+   text-decoration: underline #EFA501;
+   color: #EFA501;
+}
+
+/* Start pics */
+
+.offer{
+   
+}
+
+
+.offer__pics{
+max-height: 1092px;
+display: grid; 
+grid-template-columns: repeat(3, 370px); 
+grid-template-rows: repeat(3, 530px); 
+grid-column-gap: 30px; 
+grid-row-gap: 30px; 
+padding-bottom: 135px;
+
+}
+
+
+
+
+.offer__pics-item{
+max-width: 370px;
+max-height: 531px;
+border-radius: 30px;
+position: relative;
+}
+
+/* Start create your tour */
+
+.create__title{
+max-width: 458px;
+text-align: center;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 59px;
+line-height: 124%;
+margin: 0 auto;
+padding-bottom: 30px;
+}
+
+.create__subtitle{
+   max-width: 418px;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 142%;
+text-align: center;
+color: #A6A6A6;
+margin: 0 auto;
+padding-bottom: 100px;
+}
+
+
+/* Create form  */
+
+.create__container{
+height: 986px;
+background-color: #FFFFFF;
+border-radius: 50px;
+}
+
+
+.create__form-name{
+padding-bottom: 8px;
+
+}
+
+.create__form-wndw{
+width: 500px;
+height: 68px;
+border-radius: 10px;
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
