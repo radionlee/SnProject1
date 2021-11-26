@@ -32,12 +32,9 @@
                      <a href="#" class="header__link">Истории</a>
                   </li>
 
-                  <li class="header__item">
-                     <a href="#" class="header__link">+7&nbsp999&nbsp999&nbsp99&nbsp99</a>
-                  </li>
-
                </ul>
             </nav>
+            <a href="#" class="header__link-phone">+7&nbsp999&nbsp999&nbsp99&nbsp99</a>
          </div>
       </div>
       <div class="about">
@@ -52,42 +49,78 @@
    <section id="chose" class="chose">
       <div class="chose__wrap">
          <h2 class="chose__title">Выбери свой тур</h2>
-         <ul class="chose__tour-items">
-            <li>
-               <a href="#" class="chose__tour-link">Популяные</a>
-            </li>
-            <li>
-               <a href="#" class="chose__tour-link">Авторские</a>
-            </li>
-            <li>
-               <a href="#" class="chose__tour-link">Походы</a>
-            </li>
-            <li>
-               <a href="#" class="chose__tour-link">Сплавы</a>
-            </li>
-            <li>
-               <a href="#" class="chose__tour-link">Велопрогулки</a>
-            </li>
-         </ul>
+         <div class="chose__nav">
+            <ul class="chose__tour-items">
+               <li>
+                  <a href="#" class="chose__tour-link">Популярные</a>
+               </li>
+               <li>
+                  <a href="#" class="chose__tour-link">Авторские</a>
+               </li>
+               <li>
+                  <a href="#" class="chose__tour-link">Походы</a>
+               </li>
+               <li>
+                  <a href="#" class="chose__tour-link">Сплавы</a>
+               </li>
+               <li>
+                  <a href="#" class="chose__tour-link">Велопрогулки</a>
+               </li>
+            </ul>
+         </div>
       </div>
 
       <!-- Cards start -->
       <section id="offer" class="offer">
          <ul class="offer__pics">
 
+            <li class="offer__item1">
+               <h3 class="offer__title">Путешествие в&nbspгоры</h3>
+               <p class="offer__subtitle">от 80 0000 руб</p>
+               <a href="#" class="offer__more">
+                  Подробнее <img src="img/icons/Vector.png" alt="" class="offer__more-vector">
+               </a>
+            </li>
+            <li class="offer__item2">
+               <h3 class="offer__title">Путешествие в горы</h3>
+               <p class="offer__subtitle">от 80 0000 руб</p>
+               <a href="#" class="offer__more">
+                  Подробнее <img src="img/icons/Vector.png" alt="" class="offer__more-vector">
+               </a>
+            </li>
+            <li class="offer__item3">
+               <h3 class="offer__title">Путешествие в горы</h3>
+               <p class="offer__subtitle">от 80 0000 руб</p>
+               <a href="#" class="offer__more">
+                  Подробнее <img src="img/icons/Vector.png" alt="" class="offer__more-vector">
+               </a>
 
+            </li>
+            <li class="offer__item4">
+               <h3 class="offer__title">Путешествие в горы</h3>
+               <p class="offer__subtitle">от 80 0000 руб</p>
+               <a href="#" class="offer__more">
+                  Подробнее <img src="img/icons/Vector.png" alt="" class="offer__more-vector">
+               </a>
 
-            <img src="img/CardTour/cardtourphoto1.jpg" alt="Картинка оффера" class="offer__pics-item">
+            </li>
+            <li class="offer__item5">
+               <h3 class="offer__title">Путешествие в горы</h3>
+               <p class="offer__subtitle">от 80 0000 руб</p>
+               <a href="#" class="offer__more">
+                  Подробнее <img src="img/icons/Vector.png" alt="" class="offer__more-vector">
+               </a>
 
-            <img src="img/CardTour/cardtourphoto2.jpg" alt="Картинка оффера" class="offer__pics-item">
+            </li>
+            <li class="offer__item">
+               <h3 class="offer__title">Путешествие в горы</h3>
+               <p class="offer__subtitle">от 80 0000 руб</p>
+               <a href="#" class="offer__more">
+                  Подробнее <img src="img/icons/Vector.png" alt="" class="offer__more-vector">
+               </a>
 
-            <img src="img/CardTour/cardtourphoto3.jpg" alt="Картинка оффера" class="offer__pics-item">
+            </li>
 
-            <img src="img/CardTour/cardtourphoto4.jpg" alt="Картинка оффера" class="offer__pics-item">
-
-            <img src="img/CardTour/cardtourphoto5.jpg" alt="Картинка оффера" class="offer__pics-item">
-
-            <img src="img/CardTour/cardtourphoto6.jpg" alt="Картинка оффера" class="offer__pics-item">
 
 
          </ul>
@@ -97,45 +130,43 @@
       <!-- Форма собери тур-->
 
 
-      <section class="create__container">
-         <div class="container container--">
-            <h2 class="feedback__title">Закажите доставку</h2>
-            <form class="feedback__form">
-               <input type="hidden" name="to" value="somewhere@mail.com">
-               <div class="feedback__form-col">
-                  <div class="feedback__form-row">
-                     <label class="feedback__form-block">
-                        <div class="feedback__form-title">Имя</div>
-                        <input type="text" class="feedback__form-input" name="name">
+      <section class="create">
+         <h2 class="create__title">Собери свой тур</h2>
+         <p class="create__subtitle">Идейные соображения высшего порядка, а&nbspтакже рамки и место обучения кадров</p>
+         <div class="create__container">
+            <form class="create__form">
+               <div class="create__form-col">
+                  <div class="create__form-row">
+                     <label class="create__form-block">
+                        <div class="create__form-title">Имя</div>
+                        <input type="text" placeholder="Введите Ваше имя" class="create__form-input" name="name">
                      </label>
-                     <label class="feedback__form-block">
-                        <div class="feedback__form-title">Телефон</div>
-                        <input type="text" class="feedback__form-input" name="phone">
+                     <label class="create__form-block">
+                        <div class="create__form-title">Направление</div>
+                        <input type="text" placeholder="Куда хотите ехать" class="create__form-input" name="name">
                      </label>
-                  </div>
-                  <div class="feedback__form-row">
-                     <label class="feedback__form-block">
-                        <div class="feedback__form-title">Улица</div>
-                        <input type="text" class="feedback__form-input" name="street">
+                     <label class="create__form-block">
+                        <div class="create__form-title">Email</div>
+                        <input type="text" placeholder="example@mail.com" class="create__form-input" name="name">
                      </label>
-                  </div>
-                  <div class="feedback__form-row">
-                     <label class="feedback__form-block">
-                        <div class="feedback__form-title">Дом</div>
-                        <input type="text" class="feedback__form-input" name="home">
+                     <label class="create__form-block">
+                        <div class="create__form-title">Телефон</div>
+                        <input type="text" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _" class="create__form-input"
+                           name="name">
                      </label>
-                     <label class="feedback__form-block">
-                        <div class="feedback__form-title">Корпус</div>
-                        <input type="text" class="feedback__form-input" name="part">
+                     <label class="create__form-block">
+                        <div class="create__form-title">Дата от</div>
+                        <input type="text" placeholder="ДД.ММ.ГГГГ" class="create__form-input" name="name">
                      </label>
-                     <label class="feedback__form-block">
-                        <div class="feedback__form-title">Квартира</div>
-                        <input type="text" class="feedback__form-input" name="apt">
+                     <label class="create__form-block">
+                        <div class="create__form-title">Дата до</div>
+                        <input type="text" placeholder="ДД.ММ.ГГГГ" class="create__form-input" name="name">
                      </label>
-                     <label class="feedback__form-block">
-                        <div class="feedback__form-title">Этаж</div>
-                        <input type="text" class="feedback__form-input" name="floor">
+                     <label class="create__form-block">
+                        <div class="create__form-title">Комментариb</div>
+                        <input type="text" class="create__form-input" name="name">
                      </label>
+
                   </div>
 
 

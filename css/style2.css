@@ -115,32 +115,49 @@ body{
 }
 
 .header__wrapper{
-   
    padding-top: 28.88px;
    display: flex;
    flex-wrap: wrap;
    align-items:center;
-   justify-content: space-around;
+   justify-content: space-between;
    padding-bottom: 147.88px;
+}
+
+.header__nav{
+   display: flex;
+   flex-wrap: nowrap;
+   justify-content: space-between;
+}
+
+.header__logo{
+   justify-content: flex-start;
 }
 
 .header__list{
    display: flex;
-   flex-wrap: wrap;
+   flex-wrap: nowrap;
+   max-width: 468px;
 }
 
-.header__item{
-   margin-right: 50px;
+
+
+.header__item:not(:last-child){
+margin-right: 50px;
 }
 
 .header__link{
+   text-decoration: none;
    color:white;
    font-family: Roboto;
    font-style: normal;
    font-weight: normal;
    font-size: 20px;
    line-height: 142%;
+}
+
+.header__link-phone{
    text-decoration: none;
+   color: white;
 }
 
 .header__link:hover, .header__link:focus, .header__link:active{
@@ -186,13 +203,28 @@ body{
    padding-bottom: 50px;
 }
 
+
+
 .btnfindtour{
    max-width: 118px;
    max-height: 34px;
-   margin: 0 auto;
-   padding-bottom: 119px;
-   
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  padding-bottom: 119px;
 }
+
+.btnfindtour button{
+   width: 184px;
+   height: 34px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 17px;
+   line-height: 142%;
+   border-radius: 10px;
+}
+
 
 /* Start find tour */
 
@@ -207,13 +239,21 @@ body{
 text-align: center;
 }
 
-.chose__tour-items{
-   display: flex;
-   flex-wrap: wrap;
-   text-align: center;
-   justify-content: center;
-   padding-bottom: 106px;
+.chose__nav{
+   
 }
+
+.chose__tour-items{
+  margin: 0 auto;
+   display: flex;
+   flex-wrap: nowrap;
+   text-align: center;
+   padding-bottom: 106px;
+   max-width: 700px;
+   justify-content: space-between;
+}
+
+
 
 
 
@@ -237,8 +277,12 @@ text-align: center;
    line-height: 122%;
    text-decoration: none;
    color: black;
-   margin-right: 30px;
+   
 }
+
+
+
+
 
 
 .chose__tour-link:hover, .chose__tour-link:focus, .chose__tour-link:active{
@@ -262,6 +306,7 @@ grid-column-gap: 30px;
 grid-row-gap: 30px; 
 padding-bottom: 135px;
 
+
 }
 
 
@@ -271,64 +316,185 @@ padding-bottom: 135px;
 max-width: 370px;
 max-height: 531px;
 border-radius: 30px;
-position: relative;
+
+} 
+
+
+
+.offer__item1{
+   position: relative;
+   background-image: url(../img/CardTour/cardtourphoto1.jpg);
+   background-size: cover;
+   border-radius: 50px;
+   display: flex;
+   justify-content: center;
+}
+.offer__item2{
+   position: relative;
+   background-image: url(../img/CardTour/cardtourphoto2.jpg);
+   background-size: cover;
+   border-radius: 50px;
+}
+.offer__item3{
+   position: relative;
+   background-image: url(../img/CardTour/cardtourphoto3.jpg);
+   background-size: cover;
+   border-radius: 50px;
+}
+.offer__item4{
+   position: relative;
+   background-image: url(../img/CardTour/cardtourphoto4.jpg);
+   background-size: cover;
+   border-radius: 50px;
+}
+.offer__item5{
+   position: relative;
+   background-image: url(../img/CardTour/cardtourphoto5.jpg);
+   background-size: cover;
+   border-radius: 50px;
+}
+.offer__item6{
+   position: relative;
+   background-image: url(../img/CardTour/cardtourphoto6.jpg);
+   background-size: cover;
+   border-radius: 50px;
 }
 
-/* Start create your tour */
+.offer__title, .offer__subtitle, .offer__more{
+   position: absolute;
+}
 
-.create__title{
-max-width: 458px;
-text-align: center;
+.offer__title{
 font-family: Roboto;
 font-style: normal;
-font-weight: bold;
-font-size: 59px;
-line-height: 124%;
-margin: 0 auto;
-padding-bottom: 30px;
+font-weight: 500;
+font-size: 35px;
+line-height: 122%;
+color: red;
+width: 270px;
+max-height: 86px;
+margin-top: 50px;
+
+
+
 }
 
-.create__subtitle{
-   max-width: 418px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 142%;
-text-align: center;
-color: #A6A6A6;
-margin: 0 auto;
-padding-bottom: 100px;
+.offer__subtitle{
+   margin-top: 152px;
+   font-family: Roboto;
+   color: red;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 17px;
+   line-height: 142%;
+   letter-spacing: -0.01em;
+   width: 270px;
+   max-height: 24px;
+   
+}
+
+.offer__more{
+   margin-top: 453px;
+   color: white;
+   text-decoration: none;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 23px;
+   line-height: 122%;
+   margin-left: 50px;
+}
+
+.offer__more-vector{
+   padding-left: 16px;
 }
 
 
-/* Create form  */
+/* Start feedback  */
 
 .create__container{
-height: 986px;
-background-color: #FFFFFF;
-border-radius: 50px;
+   height: 986px;
+   background-color: #FFFFFF;
+   border-radius: 50px;
+   }
+   
+   .create__title{
+      max-width: 458px;
+      text-align: center;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 59px;
+      line-height: 124%;
+      margin: 0 auto;
+      padding-bottom: 30px;
+      
+      }
+      
+      .create__subtitle{
+         max-width: 418px;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 142%;
+      text-align: center;
+      color: #A6A6A6;
+      margin: 0 auto;
+      padding-bottom: 100px;
+      }
+   
+   .create__form-name{
+   padding-bottom: 8px;
+   
+   }
+
+   .create__form-title{
+      padding-bottom: 8px;
+   }
+
+.create__form-col{
+   max-width: 1170px;
+   max-height: 986px;
+   
+}
+
+.create__form-row{
+   justify-content: space-around;
+  max-width: 1030px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 70px;
+}
+
+.create__form-block{
+   padding-bottom: 69px;
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 20px;
+   line-height: 142%;
 }
 
 
-.create__form-name{
-padding-bottom: 8px;
-
+.create__form-block:last-child{
+   padding-bottom: 33px;
+   
 }
 
-.create__form-wndw{
-width: 500px;
-height: 68px;
-border-radius: 10px;
-  
-
+.create__form-input{
+   width: 500px;
+   height: 68px;
+   border-radius: 10px;
+   border: 1px solid #F4F0E9;
+   box-sizing: border-box;
+   background: #F9F7F4;
 }
 
-
-
-
-
-
+.create__form-input::placeholder{
+   padding-left: 20px;
+}
 
 
 
