@@ -446,7 +446,7 @@ border-radius: 50px;
 
 .create__item-input{
    
-   background-color: #F9F7F4;;
+   background-color: red;
    border: 1px solid #F4F0E9;
    border-radius: 10px;
    width: 500px;
@@ -456,6 +456,7 @@ border-radius: 50px;
    font-size: 20px;
    line-height: 142%;
    color: #A6A6A6;
+
 }
 
 /* End Create tours style */
